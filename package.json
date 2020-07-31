@@ -1,0 +1,29 @@
+{
+  "name": "sparql-engine-sources",
+  "version": "1.0.0",
+  "description": "Connectors for querying common RDF data sources using SPARQL in JavaScript/TypeScript",
+  "main": "dist/api.js",
+  "scripts": {
+    "lint": "tslint -c ./tslint.json --fix src/*.ts src/**/*.ts",
+    "build": "tsc",
+    "pretest": "npm run build",
+    "test": "mocha -r ts-node/register tests/**/*.spec.ts"
+  },
+  "repository": "https://github.com/Callidon/sparql-engine-sources.git",
+  "author": "Thomas Minier <thomas.minier@sii.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^14.0.27",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.0",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2",
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "sparql-engine": "^0.7.6"
+  }
+}
